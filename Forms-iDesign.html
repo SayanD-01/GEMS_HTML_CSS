@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration form</h1>
+    <form action="display.php" method="post">
+    Name:<input type="text" name="name">
+    Username:<input type="text" name="userName">
+    Password:<input type="password" name="password" >
+    Re-enter Password:<input type="password" name="re-EnterPassword">
+    Address<input type="textarea" name="address">
+    Gender:<input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+    
+    District Name:
+    <select name="districtName">
+        <option value="New York">New York</option>
+        <option value="Coimbatore">Coimbatore</option>
+    </select>
+    <label for="events[]">Events:</label><br>
+    <input type="checkbox" id="Wedding" name="events[]" value="Wedding">
+    <label for="Wedding">Wedding</label><br>
+    <input type="checkbox" id="Corporate" name="events[]" value="Corporate">
+    <label for="Corporate">Corporate</label><br>
+    <input type="checkbox" id="Social" name="events[]" value="Social">
+    <label for="Social">Social</label><br><br>
+    <button type="submit" name="register">Register</button>
+    </form>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body>
+	<h1>Registration Form</h1>
+	<form action="display.php" method="POST">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"><br><br>
+
+		<label for="userName">Username:</label>
+		<input type="text" id="userName" name="userName"><br><br>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password"><br><br>
+
+		<label for="re-EnterPassword">Re-enter Password:</label>
+		<input type="password" id="re-EnterPassword" name="re-EnterPassword"><br><br>
+
+		<label for="address">Address:</label>
+		<textarea id="address" name="address"></textarea><br><br>
+
+		<label for="gender">Gender:</label>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Male</label>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label><br><br>
+
+		<label for="districtName">District Name:</label>
+		<select id="districtName" name="districtName">
+			<option value="New York">New York</option>
+			<option value="Coimbatore">Coimbatore</option>
+			
+		</select><br><br>
+
+		<label for="events[]">Events:</label><br>
+		<input type="checkbox" id="Wedding" name="events[]" value="Wedding">
+		<label for="Wedding">Wedding</label><br>
+		<input type="checkbox" id="Corporate" name="events[]" value="Corporate">
+		<label for="Corporate">Corporate</label><br>
+		<input type="checkbox" id="Social" name="events[]" value="Social">
+		<label for="Social">Social</label><br><br>
+
+		<input type="submit" name="register" value="Register">
+	</form>
+</body>
+</html>
+ -->
